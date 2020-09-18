@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import Input from './components/Input'
-import Post from './components/Post';
+import Input from './Input'
+import Post from './Post';
 
 
 const BASE_URL = 'https://dummyapi.io/data/api/tag/'
@@ -25,7 +25,6 @@ const PostLists = () => {
             <Input handleSearch={handlerSearch}/>
             <div className="card-columns mt-5">
                  {
-                    
                     posts && posts.data.map((post) => (
                             <Post key={post.id} post={post}/>
                         
