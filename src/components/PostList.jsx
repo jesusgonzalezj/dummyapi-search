@@ -25,7 +25,7 @@ const PostLists = () => {
     return (
         <div>
             <Input handleSearch={handlerSearch}/> 
-            <div className="card-columns mt-5 mx-5">
+            <div className="card-columns mt-5 mx-1">
                  {
                     posts && posts.data.map((post) => (
                         <Post key={post.id} post={post}/>
