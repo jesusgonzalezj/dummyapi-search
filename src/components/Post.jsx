@@ -9,8 +9,7 @@ const Post = ({post}) => {
             <div className="card p-2">
                 <div className="d-flex header-card">
                     <img src={post.owner.picture} alt="Avatar" className="avatar mr-3 mt-3"/>
-                    <h5 className="card-title">{post.owner.firstName} {post.owner.lastName}</h5>  
-                    <p>{post.owner.email}</p>
+                    <h5 className="card-title">{post.owner.firstName} {post.owner.lastName}<br/><small>{post.owner.email}</small></h5>  
                 <hr/>
                 </div>
                     <img className="card-img-top img-fluid mb-3" src={post.image} alt={post.id}/>

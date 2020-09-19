@@ -91,4 +91,10 @@ span {
     text-decoration: none;
     color: black;
 }
-
+@media (min-width: 576px) and (max-width: 768px){
+    .card-columns {
+        -webkit-column-count: 2 !important;
+        -moz-column-count: 2 !important;
+        column-count: 2 !important;
+    } 
+}
