@@ -52,29 +52,23 @@ body {
     transition: 1s;
 }
 /* CARDS */
-
-.header-card img {
-    position: absolute;
-    top: 0;
+.header-card {
+    flex-wrap: wrap;
 }
 
 .header-card h5 {
-    position: relative;
-    left: 20%;
-    margin-top: 20px;
-}
-
+    margin-top: 30px;
+} 
 .header-card p {
-    position: relative;
-    left: 20%;
-    margin-top: 0;
-}
-
+    margin-left: 30px;
+} 
 .avatar {
     vertical-align: middle;
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    margin: 10px;
+    box-shadow: 3px -2px #dddddd;
 }
 img {
     border-radius: 10px;
@@ -97,14 +91,4 @@ span {
     text-decoration: none;
     color: black;
 }
-@media (max-width: 800px) { 
-    .card-column{
-        flex-direction: column;
-    }
- }
 
-@media (max-width: 768px) { 
-    .card-column{
-        flex-direction: column;
-    }
- }
