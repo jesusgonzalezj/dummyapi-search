@@ -1,19 +1,110 @@
-.navbar {
-    background-color: #333333 ;
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+* {
+    font-family: 'Noto Sans JP', sans-serif;
 }
-.card {
-    width: 288px;
+body {
+    background-color: #6ebfb5 !important;
 }
+/* Buscador */
+.nav {
+    background-color: #6ebfb5 ;
+    padding: 10px;
+}
+
+.search-box {
+    position: relative;
+    top: 10%;
+    left: 50% !important;
+    transform: translate(-50%);
+    background-color: #006a71;
+    height: 55px;
+    border-radius: 40px; 
+    padding: 10px;
+        
+}
+.search-btn {
+    float: right;
+    border: none;
+    border-radius: 50%;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; 
+    padding: 10px 10px;  
+}
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0px;
+    color: #ffff;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 33px;
+    width: 0;
+    text-transform: lowercase;
+}
+.search-box:hover .search-txt {
+    width: 240px;
+    transition: 1s;
+}
+/* CARDS */
+
+.header-card img {
+    position: absolute;
+    top: 0;
+}
+
+.header-card h5 {
+    position: relative;
+    left: 20%;
+    margin-top: 20px;
+}
+
+.header-card p {
+    position: relative;
+    left: 20%;
+    margin-top: 0;
+}
+
 .avatar {
     vertical-align: middle;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
 }
-input {    
-    width: 500px !important;
+img {
+    border-radius: 10px;
 }
-.grid-container {
-    display: grid;
-    grid-row-gap: 50px;
+
+span {
+    color: white;
+    display: inline;
+    margin: 5px;
+    background-color: #ff5f40;
+    border-radius: 25px;
+    padding: 5px 10px;
 }
+.card a {
+    text-decoration: none;
+    color: gray;
+}
+
+.card:hover a {
+    text-decoration: none;
+    color: black;
+}
+@media (max-width: 800px) { 
+    .card-column{
+        flex-direction: column;
+    }
+ }
+
+@media (max-width: 768px) { 
+    .card-column{
+        flex-direction: column;
+    }
+ }
