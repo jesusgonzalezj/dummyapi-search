@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import Input from './Input'
 import Post from './Post';
@@ -15,6 +15,7 @@ const PostLists = () => {
     const handlerSearch = (tagSearch) => {
       fetchData(tagSearch)
   }
+  
     const fetchData = (search) => {
         axios.get(`${BASE_URL}${search}/post`, { headers: { 'app-id': APP_ID } })
         .then( ({data})  => setPosts(data))

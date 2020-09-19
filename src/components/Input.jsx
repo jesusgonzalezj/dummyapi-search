@@ -26,7 +26,7 @@ const Input = ({handleSearch}) => {
       <div className="nav"> 
           <div className="search-box">
             <form action="" onSubmit={handlerSubmit}>
-              <input required className="search-txt" type="search" placeholder="Search" 
+              <input className="search-txt" type="search" placeholder="Search" 
               onChange={handleChange} value={tagSearch}/>
               <button className="search-btn" onClick={handleOnClick} type="submit">
                 <i className="fa fa-search"></i></button>

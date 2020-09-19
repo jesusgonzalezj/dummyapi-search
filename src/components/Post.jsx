@@ -6,16 +6,16 @@ const Post = ({post}) => {
     
     return ( 
         <div>
-            <div className="card">
-                <div className="container header-card">
+            <div className="card p-2">
+                <div className="d-flex header-card">
                     <img src={post.owner.picture} alt="Avatar" className="avatar mr-3 mt-3"/>
                     <h5 className="card-title">{post.owner.firstName} {post.owner.lastName}</h5>  
                     <p>{post.owner.email}</p>
                 <hr/>
                 </div>
-                    <img className="card-img-top mb-3" src={post.image} alt={post.id}/>
+                    <img className="card-img-top img-fluid mb-3" src={post.image} alt={post.id}/>
                     {
-                        post.tags.map(tag =>(<span key={tag}>{tag}</span>))
+                        post.tags.map(tag =>(<span key={tag}>#{tag}</span>))
                     }
                 <div className="card-body">
                     <p className="card-text">{post.text}</p>
