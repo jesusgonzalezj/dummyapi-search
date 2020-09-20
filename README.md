@@ -12,7 +12,7 @@ Aplicación creada para la busqueda por medio de los tag. <br/>API de consulta [
 * Animations para la barra de busqueda
 * Firebase hosting
 
-## Cómo construir el proyecto
+## Cómo correr el proyecto localmente
 
 ### `npm start`
 Ejecuta la aplicación en modo de desarrollo. <br />
